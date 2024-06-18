@@ -1,0 +1,45 @@
+p {
+    background-color: red;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+
+}
+.side-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: aqua;
+    height: 100vh;
+    
+}
+.dashboard-logo {
+    padding: 1rem;
+}
+.nav-list {
+    padding: 1.5rem;
+}
+.header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-color: rebeccapurple;
+    
+}
+.header-list {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+.main-article-container {
+    background-color: green;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    min-height: 70vh;
+    
+   
+}
