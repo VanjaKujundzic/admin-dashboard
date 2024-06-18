@@ -1,9 +1,11 @@
 p {
-    background-color: red;
+    
 }
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+    background-color: white;
     
 
 }
@@ -14,7 +16,7 @@ p {
     grid-column: span 1;
     grid-row: span 2;
     background-color: aqua;
-    height: 100vh;
+    min-height: 100vh;
     
 }
 .dashboard-logo {
@@ -26,20 +28,111 @@ p {
 .header {
     display: grid;
     grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(1, 1fr);
     grid-column-start: 2;
     grid-row-start: 1;
-    background-color: rebeccapurple;
+    background-color: rgb(253, 252, 255);
     
 }
-.header-list {
-    display: grid;
-    grid-template-columns: 100px 100px;
+.header>div {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
 }
 .main-article-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 7fr 1fr 7fr;
     background-color: green;
     grid-column-start: 2;
     grid-row-start: 2;
-    min-height: 70vh;
+    /* min-height: 70vh; this can be removed later */
+    background-color: #e2e8f0;
+   
     
    
+} 
+#trending-text {
+    grid-column: 2/3;
+    
+
+}
+.card {
+    border-radius: 20px;
+    padding: 1rem;
+   
+    
+}
+.card-container {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(250px,1fr));
+    grid-column: 1/2;
+    grid-row: 2/5;
+    gap: 10px;
+}
+.card-container .card {
+    /* height: 200px;  not needed*/ 
+    background-color: white;
+    
+    
+}
+.announcement-card {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 10px;
+}
+.announcement-card .card {
+    min-height: 200px;
+    background-color: white;
+    
+}
+.trending-card {
+    margin-left: 10px;
+}
+.trending-card .card {
+    min-height: 200px;
+    background-color: white;
+}
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    
+    
+
+
+    
+}
+input {
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: solid 0.5px rgba(109, 99, 99, 0.535);
+    
+}
+#btn-container {
+    justify-content: center;
+    gap: 1rem;
+    
+}
+#notification-container {
+    justify-content: center;
+    gap: 1rem;
+
+}
+button {
+    min-height: 2rem;
+    min-width: 5rem;
+    border-radius: 1rem;
+    background-color: rgb(109, 109, 168);
+    outline: none;
+    color: white;
+    border: none;
+}
+button:hover {
+    outline: solid 5px rgb(109, 109, 168);;
+}
+svg {
+    width: 30px;
+    height: 30px;
 }
