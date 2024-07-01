@@ -1,5 +1,22 @@
-p {
-    
+html {
+    font-family: "Rubik", sans-serif; 
+}
+h2 {
+    font-weight: 500;
+}
+.logo {
+    height:100px;
+    width: 100px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/* a:visited {
+    color: rgba(0, 0, 0, 0.264);
+} */
+a:hover {
+    opacity: 50%;
 }
 .container {
     display: grid;
@@ -9,21 +26,37 @@ p {
     
 
 }
+
 .side-bar {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 10fr;
     grid-column: span 1;
     grid-row: span 2;
-    background-color: aqua;
+    background-color: #155e75;
     min-height: 100vh;
     
 }
+
+.sidebar-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.sidebar-list span {
+    color: white;
+}
+
 .dashboard-logo {
+    display: flex;
+    align-items: center;
     padding: 1rem;
 }
 .nav-list {
     padding: 1.5rem;
+}
+li {
+    padding-bottom: 1rem;
 }
 .header {
     display: grid;
@@ -31,7 +64,7 @@ p {
     grid-template-rows: repeat(1, 1fr);
     grid-column-start: 2;
     grid-row-start: 1;
-    background-color: rgb(253, 252, 255);
+    background-color: #d6d3d1;
     
 }
 .header>div {
@@ -48,13 +81,15 @@ p {
     grid-column-start: 2;
     grid-row-start: 2;
     /* min-height: 70vh; this can be removed later */
-    background-color: #e2e8f0;
+    background-color: #e7e5e4;
    
     
    
 } 
+
 #trending-text {
     grid-column: 2/3;
+    padding: 1rem 0rem 0rem 1rem;
     
 
 }
@@ -63,6 +98,10 @@ p {
     padding: 1rem;
    
     
+}
+.card-header {
+    padding-left: 1rem;
+    font-weight: 500;
 }
 .card-container {
     display: grid;
@@ -88,7 +127,7 @@ p {
     
 }
 .trending-card {
-    margin-left: 10px;
+    margin: 10px 0px 0px 10px;
 }
 .trending-card .card {
     min-height: 200px;
@@ -96,12 +135,7 @@ p {
 }
 .search-bar-container {
     display: flex;
-    align-items: center;
-    
-    
-
-
-    
+    align-items: center;  
 }
 input {
     width: 100%;
@@ -124,15 +158,18 @@ button {
     min-height: 2rem;
     min-width: 5rem;
     border-radius: 1rem;
-    background-color: rgb(109, 109, 168);
+    background-color: #0891b2;
     outline: none;
     color: white;
     border: none;
 }
 button:hover {
-    outline: solid 5px rgb(109, 109, 168);;
+    outline: solid 5px #0891b2;
 }
 svg {
     width: 30px;
     height: 30px;
+}
+footer {
+    display: flex;
 }
